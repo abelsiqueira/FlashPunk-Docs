@@ -1,0 +1,498 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="Draw,net.flashpunk.utils.Draw,blend,circle,curve,hitbox,line,linePlus,rect,resetTarget,setTarget" name="keywords">
+<title>net.flashpunk.utils.Draw</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'Draw - API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">FlashPunk</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?net/flashpunk/utils/Draw.html&amp;net/flashpunk/utils/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Draw</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Draw"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">net.flashpunk.utils</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class Draw</td>
+</tr>
+</table>
+<p></p>
+  Static class with access to miscellanious drawing functions.
+  These functions are not meant to replace Graphic components
+  for Entities, but rather to help with testing and debugging.
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#blend">blend</a> : String<div class="summaryTableDescription">[static]
+   The blending mode used by Draw functions.</div>
+</td><td class="summaryTableOwnerCol">Draw</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#circle()">circle</a>(x:int, y:int, radius:Number, color:uint = 0x000000, alpha:Number = 1):void</div>
+<div class="summaryTableDescription">[static]
+   Draws a filled circle.</div>
+</td><td class="summaryTableOwnerCol">Draw</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#curve()">curve</a>(x1:int, y1:int, x2:int, y2:int, x3:int, y3:int):void</div>
+<div class="summaryTableDescription">[static]
+   Draws a quadratic curve to the screen.</div>
+</td><td class="summaryTableOwnerCol">Draw</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#hitbox()">hitbox</a>(e:<a href="../Entity.html">Entity</a>, outline:Boolean = true, color:uint = 0xFFFFFF, alpha:Number = 1):void</div>
+<div class="summaryTableDescription">[static]
+   Draws the Entity's hitbox.</div>
+</td><td class="summaryTableOwnerCol">Draw</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#line()">line</a>(x1:int, y1:int, x2:int, y2:int, color:uint = 0xFFFFFF):void</div>
+<div class="summaryTableDescription">[static]
+   Draws a pixelated, non-antialiased line.</div>
+</td><td class="summaryTableOwnerCol">Draw</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#linePlus()">linePlus</a>(x1:int, y1:int, x2:int, y2:int, color:uint = 0xFF000000, alpha:Number = 1, thick:Number = 1):void</div>
+<div class="summaryTableDescription">
+   Draws a smooth, antialiased line with optional alpha and thickness.</div>
+</td><td class="summaryTableOwnerCol">Draw</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#rect()">rect</a>(x:int, y:int, width:uint, height:uint, color:uint = 0xFFFFFF, alpha:Number = 1):void</div>
+<div class="summaryTableDescription">[static]
+   Draws a filled rectangle.</div>
+</td><td class="summaryTableOwnerCol">Draw</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#resetTarget()">resetTarget</a>():void</div>
+<div class="summaryTableDescription">[static]
+   Resets the drawing target to the default.</div>
+</td><td class="summaryTableOwnerCol">Draw</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setTarget()">setTarget</a>(target:BitmapData, camera:Point = null, blend:String = null):void</div>
+<div class="summaryTableDescription">[static]
+   Sets the drawing target for Draw functions.</div>
+</td><td class="summaryTableOwnerCol">Draw</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="blend"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">blend</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var blend:String</code><p>
+   The blending mode used by Draw functions. This will not
+   apply to Draw.line(), but will apply to Draw.linePlus().
+   </p></div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="circle()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">circle</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function circle(x:int, y:int, radius:Number, color:uint = 0x000000, alpha:Number = 1):void</code><p>
+   Draws a filled circle.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:int</code> &mdash;   X position of the circle's center.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:int</code> &mdash;   Y position of the circle's center.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">radius</span>:Number</code> &mdash;  Radius of the circle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">color</span>:uint</code> (default = <code>0x000000</code>)<code></code> &mdash;  Color of the circle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">alpha</span>:Number</code> (default = <code>1</code>)<code></code> &mdash;  Alpha of the circle.
+   </td>
+</tr>
+</table>
+</div>
+<a name="curve()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">curve</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function curve(x1:int, y1:int, x2:int, y2:int, x3:int, y3:int):void</code><p>
+   Draws a quadratic curve to the screen.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x1</span>:int</code> &mdash;  X start.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y1</span>:int</code> &mdash;  Y start.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">x2</span>:int</code> &mdash;  X control point, used to determine the curve.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y2</span>:int</code> &mdash;  Y control point, used to determine the curve.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">x3</span>:int</code> &mdash;  X finish.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y3</span>:int</code> &mdash;  Y finish.
+   </td>
+</tr>
+</table>
+</div>
+<a name="hitbox()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">hitbox</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function hitbox(e:<a href="../Entity.html">Entity</a>, outline:Boolean = true, color:uint = 0xFFFFFF, alpha:Number = 1):void</code><p>
+   Draws the Entity's hitbox.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">e</span>:<a href="../Entity.html">Entity</a></code> &mdash;   The Entity whose hitbox is to be drawn.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">outline</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash;  If just the hitbox's outline should be drawn.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">color</span>:uint</code> (default = <code>0xFFFFFF</code>)<code></code> &mdash;  Color of the hitbox.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">alpha</span>:Number</code> (default = <code>1</code>)<code></code> &mdash;  Alpha of the hitbox.
+   </td>
+</tr>
+</table>
+</div>
+<a name="line()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">line</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function line(x1:int, y1:int, x2:int, y2:int, color:uint = 0xFFFFFF):void</code><p>
+   Draws a pixelated, non-antialiased line.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x1</span>:int</code> &mdash;  Starting x position.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y1</span>:int</code> &mdash;  Starting y position.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">x2</span>:int</code> &mdash;  Ending x position.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y2</span>:int</code> &mdash;  Ending y position.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">color</span>:uint</code> (default = <code>0xFFFFFF</code>)<code></code> &mdash; Color of the line.
+   </td>
+</tr>
+</table>
+</div>
+<a name="linePlus()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">linePlus</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function linePlus(x1:int, y1:int, x2:int, y2:int, color:uint = 0xFF000000, alpha:Number = 1, thick:Number = 1):void</code><p>
+   Draws a smooth, antialiased line with optional alpha and thickness.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x1</span>:int</code> &mdash;  Starting x position.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y1</span>:int</code> &mdash;  Starting y position.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">x2</span>:int</code> &mdash;  Ending x position.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y2</span>:int</code> &mdash;  Ending y position.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">color</span>:uint</code> (default = <code>0xFF000000</code>)<code></code> &mdash; Color of the line.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">alpha</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; Alpha of the line.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">thick</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; The thickness of the line.
+   </td>
+</tr>
+</table>
+</div>
+<a name="rect()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">rect</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function rect(x:int, y:int, width:uint, height:uint, color:uint = 0xFFFFFF, alpha:Number = 1):void</code><p>
+   Draws a filled rectangle.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:int</code> &mdash;   X position of the rectangle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:int</code> &mdash;   Y position of the rectangle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">width</span>:uint</code> &mdash;  Width of the rectangle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">height</span>:uint</code> &mdash;  Height of the rectangle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">color</span>:uint</code> (default = <code>0xFFFFFF</code>)<code></code> &mdash;  Color of the rectangle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">alpha</span>:Number</code> (default = <code>1</code>)<code></code> &mdash;  Alpha of the rectangle.
+   </td>
+</tr>
+</table>
+</div>
+<a name="resetTarget()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">resetTarget</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function resetTarget():void</code><p>
+   Resets the drawing target to the default. The same as calling Draw.setTarget(FP.buffer, FP.camera).
+   </p></div>
+<a name="setTarget()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setTarget</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function setTarget(target:BitmapData, camera:Point = null, blend:String = null):void</code><p>
+   Sets the drawing target for Draw functions.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">target</span>:BitmapData</code> &mdash;  The buffer to draw to.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">camera</span>:Point</code> (default = <code>null</code>)<code></code> &mdash;  The camera offset (use null for none).
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">blend</span>:String</code> (default = <code>null</code>)<code></code> &mdash;  The blend mode to use.
+   </td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

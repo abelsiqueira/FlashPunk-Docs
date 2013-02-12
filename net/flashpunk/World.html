@@ -1,0 +1,1704 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../print.css" type="text/css" media="print">
+<meta content="World,net.flashpunk.World,visible,count,farthest,first,layerFarthest,layerNearest,mouseX,mouseY,nearest,uniqueTypes,add,addList,begin,bringForward,bringToFront,classCount,classFirst,clearRecycled,clearRecycledAll,collidePoint,collidePointInto,collideRect,collideRectInto,create,end,getAll,getClass,getLayer,getType,isAtBack,isAtFront,layerCount,layerFirst,layerLast,nearestToEntity,nearestToPoint,nearestToRect,recycle,remove,removeAll,removeList,render,sendBackward,sendToBack,typeCount,typeFirst,update" name="keywords">
+<title>net.flashpunk.World</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'World - API Documentation';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">FlashPunk</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../all-classes.html')" href="../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../all-classes.html')" href="../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../index-list.html')" href="../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../index.html?net/flashpunk/World.html&amp;net/flashpunk/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;World</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class World"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">net.flashpunk</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class World</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">World <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../images/inherit-arrow.gif"> <a href="Tweener.html">Tweener</a></td>
+</tr>
+</table>
+<p></p>
+  Updated by Engine, main game container that holds all currently active Entities.
+  Useful for organization, eg. "Menu", "Level1", etc.
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<div class="showHideLinks">
+<div class="hideInheritedProperty" id="hideInheritedProperty">
+<a onclick="javascript:setInheritedVisible(false,'Property');" href="#propertySummary" class="showHideLink"><img src="../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Properties</a>
+</div>
+<div class="showInheritedProperty" id="showInheritedProperty">
+<a onclick="javascript:setInheritedVisible(true,'Property');" href="#propertySummary" class="showHideLink"><img src="../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Properties</a>
+</div>
+</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Tweener.html#active">active</a> : Boolean = true<div class="summaryTableDescription">
+   If the Tweener should update.</div>
+</td><td class="summaryTableOwnerCol"><a href="Tweener.html">Tweener</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Tweener.html#autoClear">autoClear</a> : Boolean = true<div class="summaryTableDescription">
+   If the Tweener should clear on removal.</div>
+</td><td class="summaryTableOwnerCol"><a href="Tweener.html">Tweener</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#count">count</a> : uint<div class="summaryTableDescription">[read-only]
+   How many Entities are in the World.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#farthest">farthest</a> : <a href="../flashpunk/Entity.html">Entity</a>
+<div class="summaryTableDescription">[read-only]
+   The Entity that will be rendered first by the World.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#first">first</a> : <a href="../flashpunk/Entity.html">Entity</a>
+<div class="summaryTableDescription">[read-only]
+   The first Entity in the World.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#layerFarthest">layerFarthest</a> : int<div class="summaryTableDescription">[read-only]
+   The layer that will be rendered first by the World.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#layerNearest">layerNearest</a> : int<div class="summaryTableDescription">[read-only]
+   The layer that will be rendered last by the World.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#mouseX">mouseX</a> : int<div class="summaryTableDescription">[read-only]
+   X position of the mouse in the World.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#mouseY">mouseY</a> : int<div class="summaryTableDescription">[read-only]
+   Y position of the mouse in the world.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#nearest">nearest</a> : <a href="../flashpunk/Entity.html">Entity</a>
+<div class="summaryTableDescription">[read-only]
+   The Entity that will be rendered last by the world.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#uniqueTypes">uniqueTypes</a> : uint<div class="summaryTableDescription">[read-only]
+   How many different types have been added to the World.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#visible">visible</a> : Boolean = true<div class="summaryTableDescription">
+   If the render() loop is performed.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<div class="showHideLinks">
+<div class="hideInheritedMethod" id="hideInheritedMethod">
+<a onclick="javascript:setInheritedVisible(false,'Method');" href="#methodSummary" class="showHideLink"><img src="../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Methods</a>
+</div>
+<div class="showInheritedMethod" id="showInheritedMethod">
+<a onclick="javascript:setInheritedVisible(true,'Method');" href="#methodSummary" class="showHideLink"><img src="../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Methods</a>
+</div>
+</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#World()">World</a>()</div>
+<div class="summaryTableDescription">
+   Constructor.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#add()">add</a>(e:<a href="Entity.html">Entity</a>):<a href="../flashpunk/Entity.html">Entity</a>
+</div>
+<div class="summaryTableDescription">
+   Adds the Entity to the World at the end of the frame.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addList()">addList</a>(... list):void</div>
+<div class="summaryTableDescription">
+   Adds multiple Entities to the world.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Tweener.html#addTween()">addTween</a>(t:<a href="../flashpunk/Tween.html">Tween</a>, start:Boolean = false):<a href="../flashpunk/Tween.html">Tween</a>
+</div>
+<div class="summaryTableDescription">
+   Adds a new Tween.</div>
+</td><td class="summaryTableOwnerCol"><a href="Tweener.html">Tweener</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#begin()">begin</a>():void</div>
+<div class="summaryTableDescription">
+   Override this; called when World is switch to, and set to the currently active world.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#bringForward()">bringForward</a>(e:<a href="Entity.html">Entity</a>):Boolean</div>
+<div class="summaryTableDescription">
+   Shifts the Entity one place towards the front of its contained layer.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#bringToFront()">bringToFront</a>(e:<a href="Entity.html">Entity</a>):Boolean</div>
+<div class="summaryTableDescription">
+   Brings the Entity to the front of its contained layer.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#classCount()">classCount</a>(c:Class):uint</div>
+<div class="summaryTableDescription">
+   Returns the amount of Entities of the Class are in the World.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#classFirst()">classFirst</a>(c:Class):<a href="../flashpunk/Entity.html">Entity</a>
+</div>
+<div class="summaryTableDescription">
+   The first Entity of the Class.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clearRecycled()">clearRecycled</a>(classType:Class):void</div>
+<div class="summaryTableDescription">
+   Clears stored reycled Entities of the Class type.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clearRecycledAll()">clearRecycledAll</a>():void</div>
+<div class="summaryTableDescription">
+   Clears stored recycled Entities of all Class types.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Tweener.html#clearTweens()">clearTweens</a>():void</div>
+<div class="summaryTableDescription">
+   Removes all Tweens.</div>
+</td><td class="summaryTableOwnerCol"><a href="Tweener.html">Tweener</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#collidePoint()">collidePoint</a>(type:String, pX:Number, pY:Number):<a href="../flashpunk/Entity.html">Entity</a>
+</div>
+<div class="summaryTableDescription">
+   Returns the first Entity found that collides with the position.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#collidePointInto()">collidePointInto</a>(type:String, pX:Number, pY:Number, array:Array):Array</div>
+<div class="summaryTableDescription">
+   Populates an array with all Entities that collide with the position.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#collideRect()">collideRect</a>(type:String, rX:Number, rY:Number, rWidth:Number, rHeight:Number):<a href="../flashpunk/Entity.html">Entity</a>
+</div>
+<div class="summaryTableDescription">
+   Returns the first Entity that collides with the rectangular area.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#collideRectInto()">collideRectInto</a>(type:String, rX:Number, rY:Number, rWidth:Number, rHeight:Number, array:Array):Array</div>
+<div class="summaryTableDescription">
+   Populates an array with all Entities that collide with the rectangle.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#create()">create</a>(classType:Class, addToWorld:Boolean = true):<a href="../flashpunk/Entity.html">Entity</a>
+</div>
+<div class="summaryTableDescription">
+   Returns a new Entity, or a stored recycled Entity if one exists.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#end()">end</a>():void</div>
+<div class="summaryTableDescription">
+   Override this; called when World is changed, and the active world is no longer this.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getAll()">getAll</a>(into:Array):Array</div>
+<div class="summaryTableDescription">
+   Pushes all Entities in the World into the array.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getClass()">getClass</a>(c:Class, into:Array):Array</div>
+<div class="summaryTableDescription">
+   Pushes all Entities in the World of the Class into the array.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getLayer()">getLayer</a>(layer:int, into:Array):Array</div>
+<div class="summaryTableDescription">
+   Pushes all Entities in the World on the layer into the array.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getType()">getType</a>(type:String, into:Array):Array</div>
+<div class="summaryTableDescription">
+   Pushes all Entities in the World of the type into the array.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#isAtBack()">isAtBack</a>(e:<a href="Entity.html">Entity</a>):Boolean</div>
+<div class="summaryTableDescription">
+   If the Entity as at the back of its layer.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#isAtFront()">isAtFront</a>(e:<a href="Entity.html">Entity</a>):Boolean</div>
+<div class="summaryTableDescription">
+   If the Entity as at the front of its layer.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#layerCount()">layerCount</a>(layer:int):uint</div>
+<div class="summaryTableDescription">
+   Returns the amount of Entities are on the layer in the World.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#layerFirst()">layerFirst</a>(layer:int):<a href="../flashpunk/Entity.html">Entity</a>
+</div>
+<div class="summaryTableDescription">
+   The first Entity on the Layer.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#layerLast()">layerLast</a>(layer:int):<a href="../flashpunk/Entity.html">Entity</a>
+</div>
+<div class="summaryTableDescription">
+   The last Entity on the Layer.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#nearestToEntity()">nearestToEntity</a>(type:String, e:<a href="Entity.html">Entity</a>, useHitboxes:Boolean = false):<a href="../flashpunk/Entity.html">Entity</a>
+</div>
+<div class="summaryTableDescription">
+   Finds the Entity nearest to another.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#nearestToPoint()">nearestToPoint</a>(type:String, x:Number, y:Number, useHitboxes:Boolean = false):<a href="../flashpunk/Entity.html">Entity</a>
+</div>
+<div class="summaryTableDescription">
+   Finds the Entity nearest to the position.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#nearestToRect()">nearestToRect</a>(type:String, x:Number, y:Number, width:Number, height:Number):<a href="../flashpunk/Entity.html">Entity</a>
+</div>
+<div class="summaryTableDescription">
+   Finds the Entity nearest to the rectangle.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#recycle()">recycle</a>(e:<a href="Entity.html">Entity</a>):<a href="../flashpunk/Entity.html">Entity</a>
+</div>
+<div class="summaryTableDescription">
+   Removes the Entity from the World at the end of the frame and recycles it.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#remove()">remove</a>(e:<a href="Entity.html">Entity</a>):<a href="../flashpunk/Entity.html">Entity</a>
+</div>
+<div class="summaryTableDescription">
+   Removes the Entity from the World at the end of the frame.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeAll()">removeAll</a>():void</div>
+<div class="summaryTableDescription">
+   Removes all Entities from the World at the end of the frame.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeList()">removeList</a>(... list):void</div>
+<div class="summaryTableDescription">
+   Removes multiple Entities from the world.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Tweener.html#removeTween()">removeTween</a>(t:<a href="../flashpunk/Tween.html">Tween</a>):<a href="../flashpunk/Tween.html">Tween</a>
+</div>
+<div class="summaryTableDescription">
+   Removes a Tween.</div>
+</td><td class="summaryTableOwnerCol"><a href="Tweener.html">Tweener</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#render()">render</a>():void</div>
+<div class="summaryTableDescription">
+   Performed by the game loop, renders all contained Entities.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#sendBackward()">sendBackward</a>(e:<a href="Entity.html">Entity</a>):Boolean</div>
+<div class="summaryTableDescription">
+   Shifts the Entity one place towards the back of its contained layer.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#sendToBack()">sendToBack</a>(e:<a href="Entity.html">Entity</a>):Boolean</div>
+<div class="summaryTableDescription">
+   Sends the Entity to the back of its contained layer.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#typeCount()">typeCount</a>(type:String):uint</div>
+<div class="summaryTableDescription">
+   Returns the amount of Entities of the type are in the World.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#typeFirst()">typeFirst</a>(type:String):<a href="../flashpunk/Entity.html">Entity</a>
+</div>
+<div class="summaryTableDescription">
+   The first Entity of the type.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#update()">update</a>():void</div>
+<div class="summaryTableDescription">
+   Performed by the game loop, updates all contained Entities.</div>
+</td><td class="summaryTableOwnerCol">World</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="count"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">count</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>count:uint</code>&nbsp;&nbsp;[read-only]<p>
+   How many Entities are in the World.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get count():uint</code>
+<br>
+</div>
+<a name="farthest"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">farthest</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>farthest:<a href="../flashpunk/Entity.html">Entity</a></code>&nbsp;&nbsp;[read-only]<p>
+   The Entity that will be rendered first by the World.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get farthest():<a href="../flashpunk/Entity.html">Entity</a></code>
+<br>
+</div>
+<a name="first"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">first</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>first:<a href="../flashpunk/Entity.html">Entity</a></code>&nbsp;&nbsp;[read-only]<p>
+   The first Entity in the World.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get first():<a href="../flashpunk/Entity.html">Entity</a></code>
+<br>
+</div>
+<a name="layerFarthest"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">layerFarthest</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>layerFarthest:int</code>&nbsp;&nbsp;[read-only]<p>
+   The layer that will be rendered first by the World.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get layerFarthest():int</code>
+<br>
+</div>
+<a name="layerNearest"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">layerNearest</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>layerNearest:int</code>&nbsp;&nbsp;[read-only]<p>
+   The layer that will be rendered last by the World.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get layerNearest():int</code>
+<br>
+</div>
+<a name="mouseX"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">mouseX</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>mouseX:int</code>&nbsp;&nbsp;[read-only]<p>
+   X position of the mouse in the World.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get mouseX():int</code>
+<br>
+</div>
+<a name="mouseY"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">mouseY</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>mouseY:int</code>&nbsp;&nbsp;[read-only]<p>
+   Y position of the mouse in the world.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get mouseY():int</code>
+<br>
+</div>
+<a name="nearest"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">nearest</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>nearest:<a href="../flashpunk/Entity.html">Entity</a></code>&nbsp;&nbsp;[read-only]<p>
+   The Entity that will be rendered last by the world.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get nearest():<a href="../flashpunk/Entity.html">Entity</a></code>
+<br>
+</div>
+<a name="uniqueTypes"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">uniqueTypes</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>uniqueTypes:uint</code>&nbsp;&nbsp;[read-only]<p>
+   How many different types have been added to the World.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get uniqueTypes():uint</code>
+<br>
+</div>
+<a name="visible"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">visible</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var visible:Boolean = true</code><p>
+   If the render() loop is performed.
+   </p></div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="World()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">World</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function World()</code><p>
+   Constructor.
+   </p></div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="add()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">add</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function add(e:<a href="Entity.html">Entity</a>):<a href="../flashpunk/Entity.html">Entity</a></code><p>
+   Adds the Entity to the World at the end of the frame.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">e</span>:<a href="Entity.html">Entity</a></code> &mdash;  Entity object you want to add.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../flashpunk/Entity.html">Entity</a></code> &mdash; 
+                        The added Entity object.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="addList()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addList</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addList(... list):void</code><p>
+   Adds multiple Entities to the world.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code>... <span class="label">list</span></code> &mdash;  The Entities you want to add, or arrays of Entities.
+   </td>
+</tr>
+</table>
+</div>
+<a name="begin()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">begin</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function begin():void</code><p>
+   Override this; called when World is switch to, and set to the currently active world.
+   </p></div>
+<a name="bringForward()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">bringForward</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function bringForward(e:<a href="Entity.html">Entity</a>):Boolean</code><p>
+   Shifts the Entity one place towards the front of its contained layer.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">e</span>:<a href="Entity.html">Entity</a></code> &mdash;  The Entity to shift.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; If the Entity changed position.
+   </td>
+</tr>
+</table>
+</div>
+<a name="bringToFront()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">bringToFront</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function bringToFront(e:<a href="Entity.html">Entity</a>):Boolean</code><p>
+   Brings the Entity to the front of its contained layer.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">e</span>:<a href="Entity.html">Entity</a></code> &mdash;  The Entity to shift.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; If the Entity changed position.
+   </td>
+</tr>
+</table>
+</div>
+<a name="classCount()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">classCount</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function classCount(c:Class):uint</code><p>
+   Returns the amount of Entities of the Class are in the World.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">c</span>:Class</code> &mdash;  The Class type to count.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>uint</code> &mdash; How many Entities of Class exist in the World.
+   </td>
+</tr>
+</table>
+</div>
+<a name="classFirst()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">classFirst</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function classFirst(c:Class):<a href="../flashpunk/Entity.html">Entity</a></code><p>
+   The first Entity of the Class.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">c</span>:Class</code> &mdash;  The Class type to check.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../flashpunk/Entity.html">Entity</a></code> &mdash; 
+                        The Entity.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="clearRecycled()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clearRecycled</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clearRecycled(classType:Class):void</code><p>
+   Clears stored reycled Entities of the Class type.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">classType</span>:Class</code> &mdash;  The Class type to clear.
+   </td>
+</tr>
+</table>
+</div>
+<a name="clearRecycledAll()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clearRecycledAll</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clearRecycledAll():void</code><p>
+   Clears stored recycled Entities of all Class types.
+   </p></div>
+<a name="collidePoint()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">collidePoint</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function collidePoint(type:String, pX:Number, pY:Number):<a href="../flashpunk/Entity.html">Entity</a></code><p>
+   Returns the first Entity found that collides with the position.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">type</span>:String</code> &mdash;  The Entity type to check for.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pX</span>:Number</code> &mdash;   X position.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pY</span>:Number</code> &mdash;   Y position.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../flashpunk/Entity.html">Entity</a></code> &mdash; 
+                        The collided Entity, or null if none collide.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="collidePointInto()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">collidePointInto</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function collidePointInto(type:String, pX:Number, pY:Number, array:Array):Array</code><p>
+   Populates an array with all Entities that collide with the position. This
+   function does not empty the array, that responsibility is left to the user.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">type</span>:String</code> &mdash;  The Entity type to check for.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pX</span>:Number</code> &mdash;   X position.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pY</span>:Number</code> &mdash;   Y position.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">array</span>:Array</code> &mdash;  The Array to populate with collided Entities.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Array</code> &mdash; The provided Array.
+   </td>
+</tr>
+</table>
+</div>
+<a name="collideRect()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">collideRect</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function collideRect(type:String, rX:Number, rY:Number, rWidth:Number, rHeight:Number):<a href="../flashpunk/Entity.html">Entity</a></code><p>
+   Returns the first Entity that collides with the rectangular area.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">type</span>:String</code> &mdash;  The Entity type to check for.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">rX</span>:Number</code> &mdash;   X position of the rectangle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">rY</span>:Number</code> &mdash;   Y position of the rectangle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">rWidth</span>:Number</code> &mdash;  Width of the rectangle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">rHeight</span>:Number</code> &mdash;  Height of the rectangle.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../flashpunk/Entity.html">Entity</a></code> &mdash; 
+                        The first Entity to collide, or null if none collide.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="collideRectInto()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">collideRectInto</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function collideRectInto(type:String, rX:Number, rY:Number, rWidth:Number, rHeight:Number, array:Array):Array</code><p>
+   Populates an array with all Entities that collide with the rectangle. This
+   function does not empty the array, that responsibility is left to the user.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">type</span>:String</code> &mdash;  The Entity type to check for.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">rX</span>:Number</code> &mdash;   X position of the rectangle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">rY</span>:Number</code> &mdash;   Y position of the rectangle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">rWidth</span>:Number</code> &mdash;  Width of the rectangle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">rHeight</span>:Number</code> &mdash;  Height of the rectangle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">array</span>:Array</code> &mdash;  The Array to populate with collided Entities.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Array</code> &mdash; The provided Array.
+   </td>
+</tr>
+</table>
+</div>
+<a name="create()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">create</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function create(classType:Class, addToWorld:Boolean = true):<a href="../flashpunk/Entity.html">Entity</a></code><p>
+   Returns a new Entity, or a stored recycled Entity if one exists.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">classType</span>:Class</code> &mdash;  The Class of the Entity you want to add.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">addToWorld</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash;  Add it to the World immediately.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../flashpunk/Entity.html">Entity</a></code> &mdash; 
+                        The new Entity object.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="end()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">end</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function end():void</code><p>
+   Override this; called when World is changed, and the active world is no longer this.
+   </p></div>
+<a name="getAll()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getAll</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getAll(into:Array):Array</code><p>
+   Pushes all Entities in the World into the array.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">into</span>:Array</code> &mdash;  The array to populate.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Array</code> &mdash; The same array, populated.
+   </td>
+</tr>
+</table>
+</div>
+<a name="getClass()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getClass</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getClass(c:Class, into:Array):Array</code><p>
+   Pushes all Entities in the World of the Class into the array.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">c</span>:Class</code> &mdash;   The Class type to check.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">into</span>:Array</code> &mdash;  The array to populate.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Array</code> &mdash; The same array, populated.
+   </td>
+</tr>
+</table>
+</div>
+<a name="getLayer()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getLayer</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getLayer(layer:int, into:Array):Array</code><p>
+   Pushes all Entities in the World on the layer into the array.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">layer</span>:int</code> &mdash;  The layer to check.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">into</span>:Array</code> &mdash;  The array to populate.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Array</code> &mdash; The same array, populated.
+   </td>
+</tr>
+</table>
+</div>
+<a name="getType()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getType</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getType(type:String, into:Array):Array</code><p>
+   Pushes all Entities in the World of the type into the array.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">type</span>:String</code> &mdash;  The type to check.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">into</span>:Array</code> &mdash;  The array to populate.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Array</code> &mdash; The same array, populated.
+   </td>
+</tr>
+</table>
+</div>
+<a name="isAtBack()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">isAtBack</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function isAtBack(e:<a href="Entity.html">Entity</a>):Boolean</code><p>
+   If the Entity as at the back of its layer.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">e</span>:<a href="Entity.html">Entity</a></code> &mdash;  The Entity to check.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; True or false.
+   </td>
+</tr>
+</table>
+</div>
+<a name="isAtFront()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">isAtFront</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function isAtFront(e:<a href="Entity.html">Entity</a>):Boolean</code><p>
+   If the Entity as at the front of its layer.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">e</span>:<a href="Entity.html">Entity</a></code> &mdash;  The Entity to check.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; True or false.
+   </td>
+</tr>
+</table>
+</div>
+<a name="layerCount()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">layerCount</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function layerCount(layer:int):uint</code><p>
+   Returns the amount of Entities are on the layer in the World.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">layer</span>:int</code> &mdash;  The layer to count Entities on.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>uint</code> &mdash; How many Entities are on the layer.
+   </td>
+</tr>
+</table>
+</div>
+<a name="layerFirst()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">layerFirst</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function layerFirst(layer:int):<a href="../flashpunk/Entity.html">Entity</a></code><p>
+   The first Entity on the Layer.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">layer</span>:int</code> &mdash;  The layer to check.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../flashpunk/Entity.html">Entity</a></code> &mdash; 
+                        The Entity.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="layerLast()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">layerLast</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function layerLast(layer:int):<a href="../flashpunk/Entity.html">Entity</a></code><p>
+   The last Entity on the Layer.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">layer</span>:int</code> &mdash;  The layer to check.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../flashpunk/Entity.html">Entity</a></code> &mdash; 
+                        The Entity.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="nearestToEntity()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">nearestToEntity</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function nearestToEntity(type:String, e:<a href="Entity.html">Entity</a>, useHitboxes:Boolean = false):<a href="../flashpunk/Entity.html">Entity</a></code><p>
+   Finds the Entity nearest to another.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">type</span>:String</code> &mdash;  The Entity type to check for.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">e</span>:<a href="Entity.html">Entity</a></code> &mdash;   The Entity to find the nearest to.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">useHitboxes</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; If the Entities' hitboxes should be used to determine the distance. If false, their x/y coordinates are used.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../flashpunk/Entity.html">Entity</a></code> &mdash; 
+                        The nearest Entity to e.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="nearestToPoint()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">nearestToPoint</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function nearestToPoint(type:String, x:Number, y:Number, useHitboxes:Boolean = false):<a href="../flashpunk/Entity.html">Entity</a></code><p>
+   Finds the Entity nearest to the position.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">type</span>:String</code> &mdash;  The Entity type to check for.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:Number</code> &mdash;   X position.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:Number</code> &mdash;   Y position.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">useHitboxes</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; If the Entities' hitboxes should be used to determine the distance. If false, their x/y coordinates are used.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../flashpunk/Entity.html">Entity</a></code> &mdash; 
+                        The nearest Entity to the position.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="nearestToRect()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">nearestToRect</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function nearestToRect(type:String, x:Number, y:Number, width:Number, height:Number):<a href="../flashpunk/Entity.html">Entity</a></code><p>
+   Finds the Entity nearest to the rectangle.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">type</span>:String</code> &mdash;  The Entity type to check for.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:Number</code> &mdash;   X position of the rectangle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:Number</code> &mdash;   Y position of the rectangle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">width</span>:Number</code> &mdash;  Width of the rectangle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">height</span>:Number</code> &mdash;  Height of the rectangle.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../flashpunk/Entity.html">Entity</a></code> &mdash; 
+                        The nearest Entity to the rectangle.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="recycle()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">recycle</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function recycle(e:<a href="Entity.html">Entity</a>):<a href="../flashpunk/Entity.html">Entity</a></code><p>
+   Removes the Entity from the World at the end of the frame and recycles it.
+   The recycled Entity can then be fetched again by calling the create() function.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">e</span>:<a href="Entity.html">Entity</a></code> &mdash;  The Entity to recycle.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../flashpunk/Entity.html">Entity</a></code> &mdash; 
+                        The recycled Entity.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="remove()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">remove</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function remove(e:<a href="Entity.html">Entity</a>):<a href="../flashpunk/Entity.html">Entity</a></code><p>
+   Removes the Entity from the World at the end of the frame.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">e</span>:<a href="Entity.html">Entity</a></code> &mdash;  Entity object you want to remove.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../flashpunk/Entity.html">Entity</a></code> &mdash; 
+                        The removed Entity object.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="removeAll()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeAll</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeAll():void</code><p>
+   Removes all Entities from the World at the end of the frame.
+   </p></div>
+<a name="removeList()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeList</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeList(... list):void</code><p>
+   Removes multiple Entities from the world.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code>... <span class="label">list</span></code> &mdash;  The Entities you want to remove, or arrays of Entities.
+   </td>
+</tr>
+</table>
+</div>
+<a name="render()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">render</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function render():void</code><p>
+   Performed by the game loop, renders all contained Entities.
+   If you override this to give your World render code, remember
+   to call super.render() or your Entities will not be rendered.
+   </p></div>
+<a name="sendBackward()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">sendBackward</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function sendBackward(e:<a href="Entity.html">Entity</a>):Boolean</code><p>
+   Shifts the Entity one place towards the back of its contained layer.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">e</span>:<a href="Entity.html">Entity</a></code> &mdash;  The Entity to shift.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; If the Entity changed position.
+   </td>
+</tr>
+</table>
+</div>
+<a name="sendToBack()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">sendToBack</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function sendToBack(e:<a href="Entity.html">Entity</a>):Boolean</code><p>
+   Sends the Entity to the back of its contained layer.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">e</span>:<a href="Entity.html">Entity</a></code> &mdash;  The Entity to shift.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; If the Entity changed position.
+   </td>
+</tr>
+</table>
+</div>
+<a name="typeCount()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">typeCount</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function typeCount(type:String):uint</code><p>
+   Returns the amount of Entities of the type are in the World.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">type</span>:String</code> &mdash;  The type to count.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>uint</code> &mdash; How many Entities of type exist in the World.
+   </td>
+</tr>
+</table>
+</div>
+<a name="typeFirst()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">typeFirst</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function typeFirst(type:String):<a href="../flashpunk/Entity.html">Entity</a></code><p>
+   The first Entity of the type.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">type</span>:String</code> &mdash;  The type to check.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../flashpunk/Entity.html">Entity</a></code> &mdash; 
+                        The Entity.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="update()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">update</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function update():void</code><p>
+   Performed by the game loop, updates all contained Entities.
+   If you override this to give your World update code, remember
+   to call super.update() or your Entities will not be updated.
+   </p></div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

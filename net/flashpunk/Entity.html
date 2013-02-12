@@ -1,0 +1,1042 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../print.css" type="text/css" media="print">
+<meta content="Entity,net.flashpunk.Entity,collidable,height,originX,originY,persist,visible,width,x,y,graphic,layer,mask,type,added,collide,collideInto,collidePoint,collideRect,collideTypes,collideTypesInto,collideWith,distanceFrom,distanceToPoint,distanceToRect,removed,render,setHitbox" name="keywords">
+<title>net.flashpunk.Entity</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'Entity - API Documentation';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">FlashPunk</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../all-classes.html')" href="../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../all-classes.html')" href="../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../index-list.html')" href="../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../index.html?net/flashpunk/Entity.html&amp;net/flashpunk/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Entity</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Entity"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">net.flashpunk</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class Entity</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Entity <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../images/inherit-arrow.gif"> <a href="Tweener.html">Tweener</a></td>
+</tr>
+</table>
+<p></p>
+  Main game Entity class updated by World.
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<div class="showHideLinks">
+<div class="hideInheritedProperty" id="hideInheritedProperty">
+<a onclick="javascript:setInheritedVisible(false,'Property');" href="#propertySummary" class="showHideLink"><img src="../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Properties</a>
+</div>
+<div class="showInheritedProperty" id="showInheritedProperty">
+<a onclick="javascript:setInheritedVisible(true,'Property');" href="#propertySummary" class="showHideLink"><img src="../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Properties</a>
+</div>
+</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Tweener.html#active">active</a> : Boolean = true<div class="summaryTableDescription">
+   If the Tweener should update.</div>
+</td><td class="summaryTableOwnerCol"><a href="Tweener.html">Tweener</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Tweener.html#autoClear">autoClear</a> : Boolean = true<div class="summaryTableDescription">
+   If the Tweener should clear on removal.</div>
+</td><td class="summaryTableOwnerCol"><a href="Tweener.html">Tweener</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#collidable">collidable</a> : Boolean = true<div class="summaryTableDescription">
+   If the Entity should respond to collision checks.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#graphic">graphic</a> : <a href="../flashpunk/Graphic.html">Graphic</a>
+<div class="summaryTableDescription">
+   Graphical component to render to the screen.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#height">height</a> : int<div class="summaryTableDescription">
+   Height of the Entity's hitbox.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#layer">layer</a> : int<div class="summaryTableDescription">
+   The rendering layer of this Entity.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#mask">mask</a> : <a href="../flashpunk/Mask.html">Mask</a>
+<div class="summaryTableDescription">
+   An optional Mask component, used for specialized collision.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#originX">originX</a> : int<div class="summaryTableDescription">
+   X origin of the Entity's hitbox.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#originY">originY</a> : int<div class="summaryTableDescription">
+   Y origin of the Entity's hitbox.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#persist">persist</a> : Boolean = false<div class="summaryTableDescription">
+   If the Entity is persistent across Worlds when FP.switchWorld() is called.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#type">type</a> : String<div class="summaryTableDescription">
+   The collision type, used for collision checking.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#visible">visible</a> : Boolean = true<div class="summaryTableDescription">
+   If the Entity should render.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#width">width</a> : int<div class="summaryTableDescription">
+   Width of the Entity's hitbox.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#x">x</a> : Number = 0<div class="summaryTableDescription">
+   X position of the Entity in the World.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#y">y</a> : Number = 0<div class="summaryTableDescription">
+   Y position of the Entity in the World.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<div class="showHideLinks">
+<div class="hideInheritedMethod" id="hideInheritedMethod">
+<a onclick="javascript:setInheritedVisible(false,'Method');" href="#methodSummary" class="showHideLink"><img src="../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Methods</a>
+</div>
+<div class="showInheritedMethod" id="showInheritedMethod">
+<a onclick="javascript:setInheritedVisible(true,'Method');" href="#methodSummary" class="showHideLink"><img src="../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Methods</a>
+</div>
+</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#Entity()">Entity</a>(x:Number = 0, y:Number = 0, graphic:<a href="Graphic.html">Graphic</a> = null, mask:<a href="Mask.html">Mask</a> = null)</div>
+<div class="summaryTableDescription">
+   Constructor.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#added()">added</a>():void</div>
+<div class="summaryTableDescription">
+   Override this, called when the Entity is added to a World.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Tweener.html#addTween()">addTween</a>(t:<a href="../flashpunk/Tween.html">Tween</a>, start:Boolean = false):<a href="../flashpunk/Tween.html">Tween</a>
+</div>
+<div class="summaryTableDescription">
+   Adds a new Tween.</div>
+</td><td class="summaryTableOwnerCol"><a href="Tweener.html">Tweener</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Tweener.html#clearTweens()">clearTweens</a>():void</div>
+<div class="summaryTableDescription">
+   Removes all Tweens.</div>
+</td><td class="summaryTableOwnerCol"><a href="Tweener.html">Tweener</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#collide()">collide</a>(type:String, x:Number, y:Number):<a href="../flashpunk/Entity.html">Entity</a>
+</div>
+<div class="summaryTableDescription">
+   Checks for a collision against an Entity type.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#collideInto()">collideInto</a>(type:String, x:Number, y:Number, array:Array):Array</div>
+<div class="summaryTableDescription">
+   Populates an array with all collided Entities of a type.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#collidePoint()">collidePoint</a>(x:Number, y:Number, pX:Number, pY:Number):Boolean</div>
+<div class="summaryTableDescription">
+   Checks if ths Entity overlaps the specified position.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#collideRect()">collideRect</a>(x:Number, y:Number, rX:Number, rY:Number, rWidth:Number, rHeight:Number):Boolean</div>
+<div class="summaryTableDescription">
+   Checks if ths Entity overlaps the specified rectangle.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#collideTypes()">collideTypes</a>(types:Array, x:Number, y:Number):<a href="../flashpunk/Entity.html">Entity</a>
+</div>
+<div class="summaryTableDescription">
+   Checks for collision against multiple Entity types.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#collideTypesInto()">collideTypesInto</a>(types:Array, x:Number, y:Number, array:Array):Array</div>
+<div class="summaryTableDescription">
+   Populates an array with all collided Entities of multiple types.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#collideWith()">collideWith</a>(e:<a href="Entity.html">Entity</a>, x:Number, y:Number):<a href="../flashpunk/Entity.html">Entity</a>
+</div>
+<div class="summaryTableDescription">
+   Checks if this Entity collides with a specific Entity.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#distanceFrom()">distanceFrom</a>(e:<a href="Entity.html">Entity</a>, useHitboxes:Boolean = false):Number</div>
+<div class="summaryTableDescription">
+   Calculates the distance from another Entity.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#distanceToPoint()">distanceToPoint</a>(px:Number, py:Number, useHitbox:Boolean = false):Number</div>
+<div class="summaryTableDescription">
+   Calculates the distance from this Entity to the point.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#distanceToRect()">distanceToRect</a>(rx:Number, ry:Number, rwidth:Number, rheight:Number):Number</div>
+<div class="summaryTableDescription">
+   Calculates the distance from this Entity to the rectangle.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removed()">removed</a>():void</div>
+<div class="summaryTableDescription">
+   Override this, called when the Entity is removed from a World.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Tweener.html#removeTween()">removeTween</a>(t:<a href="../flashpunk/Tween.html">Tween</a>):<a href="../flashpunk/Tween.html">Tween</a>
+</div>
+<div class="summaryTableDescription">
+   Removes a Tween.</div>
+</td><td class="summaryTableOwnerCol"><a href="Tweener.html">Tweener</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#render()">render</a>():void</div>
+<div class="summaryTableDescription">
+   Renders the Entity.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setHitbox()">setHitbox</a>(width:int = 0, height:int = 0, originX:int = 0, originY:int = 0):void</div>
+<div class="summaryTableDescription">
+   Sets the Entity's hitbox properties.</div>
+</td><td class="summaryTableOwnerCol">Entity</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Tweener.html#update()">update</a>():void</div>
+<div class="summaryTableDescription">
+   Updates the Tween container.</div>
+</td><td class="summaryTableOwnerCol"><a href="Tweener.html">Tweener</a></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="collidable"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">collidable</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var collidable:Boolean = true</code><p>
+   If the Entity should respond to collision checks.
+   </p></div>
+<a name="graphic"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">graphic</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>graphic:<a href="../flashpunk/Graphic.html">Graphic</a></code>&nbsp;&nbsp;[read-write]<p>
+   Graphical component to render to the screen.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get graphic():<a href="../flashpunk/Graphic.html">Graphic</a></code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set graphic(value:<a href="../flashpunk/Graphic.html">Graphic</a>):void</code>
+<br>
+</div>
+<a name="height"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">height</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var height:int</code><p>
+   Height of the Entity's hitbox.
+   </p></div>
+<a name="layer"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">layer</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>layer:int</code>&nbsp;&nbsp;[read-write]<p>
+   The rendering layer of this Entity. Higher layers are rendered first.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get layer():int</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set layer(value:int):void</code>
+<br>
+</div>
+<a name="mask"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">mask</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>mask:<a href="../flashpunk/Mask.html">Mask</a></code>&nbsp;&nbsp;[read-write]<p>
+   An optional Mask component, used for specialized collision. If this is
+   not assigned, collision checks will use the Entity's hitbox by default.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get mask():<a href="../flashpunk/Mask.html">Mask</a></code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set mask(value:<a href="../flashpunk/Mask.html">Mask</a>):void</code>
+<br>
+</div>
+<a name="originX"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">originX</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var originX:int</code><p>
+   X origin of the Entity's hitbox.
+   </p></div>
+<a name="originY"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">originY</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var originY:int</code><p>
+   Y origin of the Entity's hitbox.
+   </p></div>
+<a name="persist"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">persist</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var persist:Boolean = false</code><p>
+   If the Entity is persistent across Worlds when FP.switchWorld() is called.
+   </p></div>
+<a name="type"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">type</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>type:String</code>&nbsp;&nbsp;[read-write]<p>
+   The collision type, used for collision checking.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get type():String</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set type(value:String):void</code>
+<br>
+</div>
+<a name="visible"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">visible</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var visible:Boolean = true</code><p>
+   If the Entity should render.
+   </p></div>
+<a name="width"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">width</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var width:int</code><p>
+   Width of the Entity's hitbox.
+   </p></div>
+<a name="x"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">x</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var x:Number = 0</code><p>
+   X position of the Entity in the World.
+   </p></div>
+<a name="y"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">y</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var y:Number = 0</code><p>
+   Y position of the Entity in the World.
+   </p></div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="Entity()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">Entity</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function Entity(x:Number = 0, y:Number = 0, graphic:<a href="Graphic.html">Graphic</a> = null, mask:<a href="Mask.html">Mask</a> = null)</code><p>
+   Constructor. Can be usd to place the Entity and assign a graphic and mask.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:Number</code> (default = <code>0</code>)<code></code> &mdash;   X position to place the Entity.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:Number</code> (default = <code>0</code>)<code></code> &mdash;   Y position to place the Entity.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">graphic</span>:<a href="Graphic.html">Graphic</a></code> (default = <code>null</code>)<code></code> &mdash;  Graphic to assign to the Entity.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">mask</span>:<a href="Mask.html">Mask</a></code> (default = <code>null</code>)<code></code> &mdash;  Mask to assign to the Entity.
+   </td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="added()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">added</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function added():void</code><p>
+   Override this, called when the Entity is added to a World.
+   </p></div>
+<a name="collide()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">collide</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function collide(type:String, x:Number, y:Number):<a href="../flashpunk/Entity.html">Entity</a></code><p>
+   Checks for a collision against an Entity type.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">type</span>:String</code> &mdash;  The Entity type to check for.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:Number</code> &mdash;   Virtual x position to place this Entity.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:Number</code> &mdash;   Virtual y position to place this Entity.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../flashpunk/Entity.html">Entity</a></code> &mdash; 
+                        The first Entity collided with, or null if none were collided.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="collideInto()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">collideInto</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function collideInto(type:String, x:Number, y:Number, array:Array):Array</code><p>
+   Populates an array with all collided Entities of a type.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">type</span>:String</code> &mdash;  The Entity type to check for.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:Number</code> &mdash;   Virtual x position to place this Entity.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:Number</code> &mdash;   Virtual y position to place this Entity.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">array</span>:Array</code> &mdash;  The array to populate.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Array</code> &mdash; The array, populated with all collided Entities.
+   </td>
+</tr>
+</table>
+</div>
+<a name="collidePoint()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">collidePoint</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function collidePoint(x:Number, y:Number, pX:Number, pY:Number):Boolean</code><p>
+   Checks if ths Entity overlaps the specified position.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:Number</code> &mdash;   Virtual x position to place this Entity.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:Number</code> &mdash;   Virtual y position to place this Entity.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pX</span>:Number</code> &mdash;   X position.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pY</span>:Number</code> &mdash;   Y position.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; If the Entity intersects with the position.
+   </td>
+</tr>
+</table>
+</div>
+<a name="collideRect()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">collideRect</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function collideRect(x:Number, y:Number, rX:Number, rY:Number, rWidth:Number, rHeight:Number):Boolean</code><p>
+   Checks if ths Entity overlaps the specified rectangle.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:Number</code> &mdash;   Virtual x position to place this Entity.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:Number</code> &mdash;   Virtual y position to place this Entity.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">rX</span>:Number</code> &mdash;   X position of the rectangle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">rY</span>:Number</code> &mdash;   Y position of the rectangle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">rWidth</span>:Number</code> &mdash;  Width of the rectangle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">rHeight</span>:Number</code> &mdash;  Height of the rectangle.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; If they overlap.
+   </td>
+</tr>
+</table>
+</div>
+<a name="collideTypes()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">collideTypes</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function collideTypes(types:Array, x:Number, y:Number):<a href="../flashpunk/Entity.html">Entity</a></code><p>
+   Checks for collision against multiple Entity types.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">types</span>:Array</code> &mdash;  An array of Entity types to check for.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:Number</code> &mdash;   Virtual x position to place this Entity.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:Number</code> &mdash;   Virtual y position to place this Entity.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../flashpunk/Entity.html">Entity</a></code> &mdash; 
+                        The first Entity collided with, or null if none were collided.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="collideTypesInto()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">collideTypesInto</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function collideTypesInto(types:Array, x:Number, y:Number, array:Array):Array</code><p>
+   Populates an array with all collided Entities of multiple types.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">types</span>:Array</code> &mdash;  An array of Entity types to check for.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:Number</code> &mdash;   Virtual x position to place this Entity.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:Number</code> &mdash;   Virtual y position to place this Entity.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">array</span>:Array</code> &mdash;  The array to populate.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Array</code> &mdash; The array, populated with all collided Entities.
+   </td>
+</tr>
+</table>
+</div>
+<a name="collideWith()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">collideWith</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function collideWith(e:<a href="Entity.html">Entity</a>, x:Number, y:Number):<a href="../flashpunk/Entity.html">Entity</a></code><p>
+   Checks if this Entity collides with a specific Entity.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">e</span>:<a href="Entity.html">Entity</a></code> &mdash;  The Entity to collide against.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:Number</code> &mdash;  Virtual x position to place this Entity.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:Number</code> &mdash;  Virtual y position to place this Entity.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../flashpunk/Entity.html">Entity</a></code> &mdash; 
+                        The Entity if they overlap, or null if they don't.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="distanceFrom()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">distanceFrom</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function distanceFrom(e:<a href="Entity.html">Entity</a>, useHitboxes:Boolean = false):Number</code><p>
+   Calculates the distance from another Entity.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">e</span>:<a href="Entity.html">Entity</a></code> &mdash;    The other Entity.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">useHitboxes</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;  If hitboxes should be used to determine the distance. If not, the Entities' x/y positions are used.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Number</code> &mdash; The distance.
+   </td>
+</tr>
+</table>
+</div>
+<a name="distanceToPoint()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">distanceToPoint</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function distanceToPoint(px:Number, py:Number, useHitbox:Boolean = false):Number</code><p>
+   Calculates the distance from this Entity to the point.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">px</span>:Number</code> &mdash;    X position.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">py</span>:Number</code> &mdash;    Y position.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">useHitbox</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;  If hitboxes should be used to determine the distance. If not, the Entities' x/y positions are used.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Number</code> &mdash; The distance.
+   </td>
+</tr>
+</table>
+</div>
+<a name="distanceToRect()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">distanceToRect</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function distanceToRect(rx:Number, ry:Number, rwidth:Number, rheight:Number):Number</code><p>
+   Calculates the distance from this Entity to the rectangle.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">rx</span>:Number</code> &mdash;   X position of the rectangle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">ry</span>:Number</code> &mdash;   Y position of the rectangle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">rwidth</span>:Number</code> &mdash;  Width of the rectangle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">rheight</span>:Number</code> &mdash;  Height of the rectangle.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Number</code> &mdash; The distance.
+   </td>
+</tr>
+</table>
+</div>
+<a name="removed()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removed</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removed():void</code><p>
+   Override this, called when the Entity is removed from a World.
+   </p></div>
+<a name="render()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">render</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function render():void</code><p>
+   Renders the Entity. If you override this for special behaviour,
+   remember to call super.render() to render the Entity's graphic.
+   </p></div>
+<a name="setHitbox()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setHitbox</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setHitbox(width:int = 0, height:int = 0, originX:int = 0, originY:int = 0):void</code><p>
+   Sets the Entity's hitbox properties.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">width</span>:int</code> (default = <code>0</code>)<code></code> &mdash;  Width of the hitbox.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">height</span>:int</code> (default = <code>0</code>)<code></code> &mdash;  Height of the hitbox.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">originX</span>:int</code> (default = <code>0</code>)<code></code> &mdash;  X origin of the hitbox.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">originY</span>:int</code> (default = <code>0</code>)<code></code> &mdash;  Y origin of the hitbox.
+   </td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

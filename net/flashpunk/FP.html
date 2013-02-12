@@ -1,0 +1,1267 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../print.css" type="text/css" media="print">
+<meta content="FP,net.flashpunk.FP,VERSION,bounds,buffer,camera,elapsed,fixed,frameRate,height,rate,screen,width,pan,random,randomSeed,volume,world,angle,angleXY,approach,choose,clamp,cleanup,distance,distanceRectPoint,distanceRects,getBitmap,getBlue,getColorRGB,getGreen,getRed,rand,randomizeSeed,removeNulls,scale,scaleClamp,sign,switchWorld" name="keywords">
+<title>net.flashpunk.FP</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'FP - API Documentation';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">FlashPunk</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../all-classes.html')" href="../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../all-classes.html')" href="../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../index-list.html')" href="../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../index.html?net/flashpunk/FP.html&amp;net/flashpunk/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;FP</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class FP"); titleBar_setSubNav(true,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">net.flashpunk</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class FP</td>
+</tr>
+</table>
+<p></p>
+  Static catch-all class used to access global properties and functions.
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#bounds">bounds</a> : Rectangle<div class="summaryTableDescription">[static]
+   A rectangle representing the size of the screen.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#buffer">buffer</a> : BitmapData<div class="summaryTableDescription">[static]
+   The current screen buffer, drawn to in the render loop.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#camera">camera</a> : Point<div class="summaryTableDescription">[static]
+   Point used to determine drawing offset in the render loop.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#elapsed">elapsed</a> : Number<div class="summaryTableDescription">[static]
+   Time elapsed since the last frame (non-fixed framerate only).</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#fixed">fixed</a> : Boolean<div class="summaryTableDescription">[static]
+   If the game is running at a fixed framerate.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#frameRate">frameRate</a> : Number<div class="summaryTableDescription">[static]
+   The framerate assigned to the stage.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#height">height</a> : uint<div class="summaryTableDescription">[static]
+   Height of the game.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#pan">pan</a> : Number<div class="summaryTableDescription">[static]
+   Global panning factor for all sounds, a value from -1 to 1.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#random">random</a> : Number<div class="summaryTableDescription">[static][read-only]
+   A pseudo-random Number produced using FP's random seed, where 0 <= Number < 1.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#randomSeed">randomSeed</a> : uint<div class="summaryTableDescription">[static]
+   The random seed used by FP's random functions.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#rate">rate</a> : Number = 1<div class="summaryTableDescription">[static]
+   Timescale applied to FP.elapsed (non-fixed framerate only).</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#screen">screen</a> : <a href="../flashpunk/Screen.html">Screen</a>
+<div class="summaryTableDescription">[static]
+   The Screen object, use to transform or offset the Screen.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#volume">volume</a> : Number<div class="summaryTableDescription">[static]
+   Global volume factor for all sounds, a value from 0 to 1.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#width">width</a> : uint<div class="summaryTableDescription">[static]
+   Width of the game.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#world">world</a> : <a href="../flashpunk/World.html">World</a>
+<div class="summaryTableDescription">[static]
+   The currently active World object.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#angle()">angle</a>(x1:Number, y1:Number, x2:Number, y2:Number):Number</div>
+<div class="summaryTableDescription">[static]
+   Finds the angle (in degrees) from point 1 to point 2.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#angleXY()">angleXY</a>(point:Point, angle:Number, length:Number = 1):Point</div>
+<div class="summaryTableDescription">[static]
+   Sets the x/y values of the provided point to a vector of the specified angle and length.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#approach()">approach</a>(value:Number, target:Number, amount:Number):Number</div>
+<div class="summaryTableDescription">[static]
+   Approaches the value towards the target, by the specified amount, without overshooting the target.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#choose()">choose</a>(... objs):*</div>
+<div class="summaryTableDescription">[static]
+   Randomly chooses and returns one of the provided values.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clamp()">clamp</a>(value:Number, min:Number, max:Number):Number</div>
+<div class="summaryTableDescription">[static]
+   Clamps the value within the minimum and maximum values.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#cleanup()">cleanup</a>():void</div>
+<div class="summaryTableDescription">[static]
+   Forces a garbage collector sweep.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#distance()">distance</a>(x1:Number, y1:Number, x2:Number = 0, y2:Number = 0):Number</div>
+<div class="summaryTableDescription">[static]
+   Find the distance between two points.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#distanceRectPoint()">distanceRectPoint</a>(px:Number, py:Number, rx:Number, ry:Number, rw:Number, rh:Number):Number</div>
+<div class="summaryTableDescription">[static]
+   Find the distance between a point and a rectangle.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#distanceRects()">distanceRects</a>(x1:Number, y1:Number, w1:Number, h1:Number, x2:Number, y2:Number, w2:Number, h2:Number):Number</div>
+<div class="summaryTableDescription">[static]
+   Find the distance between two rectangles.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getBitmap()">getBitmap</a>(source:Class):BitmapData</div>
+<div class="summaryTableDescription">[static]
+   Fetches a stored BitmapData object represented by the source.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getBlue()">getBlue</a>(color:uint):uint</div>
+<div class="summaryTableDescription">[static]
+   Finds the blue factor of a color.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getColorRGB()">getColorRGB</a>(R:uint = 0, G:uint = 0, B:uint = 0):uint</div>
+<div class="summaryTableDescription">[static]
+   Creates a color value by combining the chosen RGB values.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getGreen()">getGreen</a>(color:uint):uint</div>
+<div class="summaryTableDescription">[static]
+   Finds the green factor of a color.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getRed()">getRed</a>(color:uint):uint</div>
+<div class="summaryTableDescription">[static]
+   Finds the red factor of a color.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#rand()">rand</a>(amount:uint):uint</div>
+<div class="summaryTableDescription">[static]
+   Returns a pseudo-random uint.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#randomizeSeed()">randomizeSeed</a>():void</div>
+<div class="summaryTableDescription">[static]
+   Randomizes the random seed using Flash's Math.random() function.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeNulls()">removeNulls</a>(a:Array):Array</div>
+<div class="summaryTableDescription">[static]
+   Removes all nulls from the array.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#scale()">scale</a>(value:Number, min:Number, max:Number, min2:Number, max2:Number):Number</div>
+<div class="summaryTableDescription">[static]
+   Transfers a value from one scale to another scale.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#scaleClamp()">scaleClamp</a>(value:Number, min:Number, max:Number, min2:Number, max2:Number):Number</div>
+<div class="summaryTableDescription">[static]
+   Transfers a value from one scale to another scale, but clamps the return value within the second scale.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#sign()">sign</a>(value:Number):int</div>
+<div class="summaryTableDescription">[static]
+   Finds the sign of the provided value.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#switchWorld()">switchWorld</a>(to:<a href="World.html">World</a>, inheritAll:Boolean = false):void</div>
+<div class="summaryTableDescription">[static]
+   Switches the current World at the end of the frame.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+</table>
+</div>
+<a name="constantSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Constants</div>
+<table id="summaryTableConstant" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#VERSION">VERSION</a> : String = "1.00"<div class="summaryTableDescription">[static]
+   The FlashPunk version.</div>
+</td><td class="summaryTableOwnerCol">FP</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="bounds"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">bounds</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var bounds:Rectangle</code><p>
+   A rectangle representing the size of the screen.
+   </p></div>
+<a name="buffer"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">buffer</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var buffer:BitmapData</code><p>
+   The current screen buffer, drawn to in the render loop.
+   </p></div>
+<a name="camera"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">camera</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var camera:Point</code><p>
+   Point used to determine drawing offset in the render loop.
+   </p></div>
+<a name="elapsed"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">elapsed</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var elapsed:Number</code><p>
+   Time elapsed since the last frame (non-fixed framerate only).
+   </p></div>
+<a name="fixed"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">fixed</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var fixed:Boolean</code><p>
+   If the game is running at a fixed framerate.
+   </p></div>
+<a name="frameRate"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">frameRate</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var frameRate:Number</code><p>
+   The framerate assigned to the stage.
+   </p></div>
+<a name="height"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">height</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var height:uint</code><p>
+   Height of the game.
+   </p></div>
+<a name="pan"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">pan</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>pan:Number</code>&nbsp;&nbsp;[read-write]<p>
+   Global panning factor for all sounds, a value from -1 to 1.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get pan():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set pan(value:Number):void</code>
+<br>
+</div>
+<a name="random"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">random</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>random:Number</code>&nbsp;&nbsp;[read-only]<p>
+   A pseudo-random Number produced using FP's random seed, where 0 <= Number < 1.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get random():Number</code>
+<br>
+</div>
+<a name="randomSeed"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">randomSeed</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>randomSeed:uint</code>&nbsp;&nbsp;[read-write]<p>
+   The random seed used by FP's random functions.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get randomSeed():uint</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set randomSeed(value:uint):void</code>
+<br>
+</div>
+<a name="rate"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">rate</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var rate:Number = 1</code><p>
+   Timescale applied to FP.elapsed (non-fixed framerate only).
+   </p></div>
+<a name="screen"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">screen</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var screen:<a href="../flashpunk/Screen.html">Screen</a></code><p>
+   The Screen object, use to transform or offset the Screen.
+   </p></div>
+<a name="volume"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">volume</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>volume:Number</code>&nbsp;&nbsp;[read-write]<p>
+   Global volume factor for all sounds, a value from 0 to 1.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get volume():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set volume(value:Number):void</code>
+<br>
+</div>
+<a name="width"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">width</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var width:uint</code><p>
+   Width of the game.
+   </p></div>
+<a name="world"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">world</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>world:<a href="../flashpunk/World.html">World</a></code>&nbsp;&nbsp;[read-write]<p>
+   The currently active World object. When you set this, the World is flagged
+   to switch, but won't actually do so until the end of the current frame.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get world():<a href="../flashpunk/World.html">World</a></code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set world(value:<a href="../flashpunk/World.html">World</a>):void</code>
+<br>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="angle()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">angle</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function angle(x1:Number, y1:Number, x2:Number, y2:Number):Number</code><p>
+   Finds the angle (in degrees) from point 1 to point 2.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x1</span>:Number</code> &mdash;  The first x-position.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y1</span>:Number</code> &mdash;  The first y-position.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">x2</span>:Number</code> &mdash;  The second x-position.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y2</span>:Number</code> &mdash;  The second y-position.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Number</code> &mdash; The angle from (x1, y1) to (x2, y2).
+   </td>
+</tr>
+</table>
+</div>
+<a name="angleXY()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">angleXY</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function angleXY(point:Point, angle:Number, length:Number = 1):Point</code><p>
+   Sets the x/y values of the provided point to a vector of the specified angle and length.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">point</span>:Point</code> &mdash;  The point object to return.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">angle</span>:Number</code> &mdash;  The angle of the vector, in degrees.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">length</span>:Number</code> (default = <code>1</code>)<code></code> &mdash;  The distance to the vector from (0, 0).
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Point</code> &mdash; The point object with x/y set to the length and angle from (0, 0).
+   </td>
+</tr>
+</table>
+</div>
+<a name="approach()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">approach</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function approach(value:Number, target:Number, amount:Number):Number</code><p>
+   Approaches the value towards the target, by the specified amount, without overshooting the target.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">value</span>:Number</code> &mdash; The starting value.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">target</span>:Number</code> &mdash; The target that you want value to approach.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">amount</span>:Number</code> &mdash; How much you want the value to approach target by.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Number</code> &mdash; The new value.
+   </td>
+</tr>
+</table>
+</div>
+<a name="choose()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">choose</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function choose(... objs):*</code><p>
+   Randomly chooses and returns one of the provided values.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code>... <span class="label">objs</span></code> &mdash;  The Objects you want to randomly choose from. Can be ints, Numbers, Points, etc.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>*</code> &mdash; A randomly chosen one of the provided parameters.
+   </td>
+</tr>
+</table>
+</div>
+<a name="clamp()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clamp</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function clamp(value:Number, min:Number, max:Number):Number</code><p>
+   Clamps the value within the minimum and maximum values.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">value</span>:Number</code> &mdash;  The Number to evaluate.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">min</span>:Number</code> &mdash;   The minimum range.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">max</span>:Number</code> &mdash;   The maximum range.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Number</code> &mdash; The clamped value.
+   </td>
+</tr>
+</table>
+</div>
+<a name="cleanup()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">cleanup</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function cleanup():void</code><p>
+   Forces a garbage collector sweep.
+   </p></div>
+<a name="distance()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">distance</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function distance(x1:Number, y1:Number, x2:Number = 0, y2:Number = 0):Number</code><p>
+   Find the distance between two points.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x1</span>:Number</code> &mdash;  The first x-position.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y1</span>:Number</code> &mdash;  The first y-position.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">x2</span>:Number</code> (default = <code>0</code>)<code></code> &mdash;  The second x-position.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y2</span>:Number</code> (default = <code>0</code>)<code></code> &mdash;  The second y-position.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Number</code> &mdash; The distance.
+   </td>
+</tr>
+</table>
+</div>
+<a name="distanceRectPoint()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">distanceRectPoint</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function distanceRectPoint(px:Number, py:Number, rx:Number, ry:Number, rw:Number, rh:Number):Number</code><p>
+   Find the distance between a point and a rectangle. Returns 0 if the point is within the rectangle.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">px</span>:Number</code> &mdash;  The x-position of the point.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">py</span>:Number</code> &mdash;  The y-position of the point.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">rx</span>:Number</code> &mdash;  The x-position of the rect.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">ry</span>:Number</code> &mdash;  The y-position of the rect.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">rw</span>:Number</code> &mdash;  The width of the rect.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">rh</span>:Number</code> &mdash;  The height of the rect.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Number</code> &mdash; The distance.
+   </td>
+</tr>
+</table>
+</div>
+<a name="distanceRects()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">distanceRects</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function distanceRects(x1:Number, y1:Number, w1:Number, h1:Number, x2:Number, y2:Number, w2:Number, h2:Number):Number</code><p>
+   Find the distance between two rectangles. Will return 0 if the rectangles overlap.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x1</span>:Number</code> &mdash;  The x-position of the first rect.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y1</span>:Number</code> &mdash;  The y-position of the first rect.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">w1</span>:Number</code> &mdash;  The width of the first rect.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">h1</span>:Number</code> &mdash;  The height of the first rect.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">x2</span>:Number</code> &mdash;  The x-position of the second rect.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y2</span>:Number</code> &mdash;  The y-position of the second rect.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">w2</span>:Number</code> &mdash;  The width of the second rect.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">h2</span>:Number</code> &mdash;  The height of the second rect.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Number</code> &mdash; The distance.
+   </td>
+</tr>
+</table>
+</div>
+<a name="getBitmap()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getBitmap</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function getBitmap(source:Class):BitmapData</code><p>
+   Fetches a stored BitmapData object represented by the source.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">source</span>:Class</code> &mdash;  Embedded Bitmap class.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>BitmapData</code> &mdash; The stored BitmapData object.
+   </td>
+</tr>
+</table>
+</div>
+<a name="getBlue()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getBlue</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function getBlue(color:uint):uint</code><p>
+   Finds the blue factor of a color.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">color</span>:uint</code> &mdash;  The color to evaluate.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>uint</code> &mdash; A uint from 0 to 255.
+   </td>
+</tr>
+</table>
+</div>
+<a name="getColorRGB()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getColorRGB</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function getColorRGB(R:uint = 0, G:uint = 0, B:uint = 0):uint</code><p>
+   Creates a color value by combining the chosen RGB values.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">R</span>:uint</code> (default = <code>0</code>)<code></code> &mdash;  The red value of the color, from 0 to 255.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">G</span>:uint</code> (default = <code>0</code>)<code></code> &mdash;  The green value of the color, from 0 to 255.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">B</span>:uint</code> (default = <code>0</code>)<code></code> &mdash;  The blue value of the color, from 0 to 255.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>uint</code> &mdash; The color uint.
+   </td>
+</tr>
+</table>
+</div>
+<a name="getGreen()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getGreen</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function getGreen(color:uint):uint</code><p>
+   Finds the green factor of a color.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">color</span>:uint</code> &mdash;  The color to evaluate.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>uint</code> &mdash; A uint from 0 to 255.
+   </td>
+</tr>
+</table>
+</div>
+<a name="getRed()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getRed</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function getRed(color:uint):uint</code><p>
+   Finds the red factor of a color.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">color</span>:uint</code> &mdash;  The color to evaluate.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>uint</code> &mdash; A uint from 0 to 255.
+   </td>
+</tr>
+</table>
+</div>
+<a name="rand()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">rand</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function rand(amount:uint):uint</code><p>
+   Returns a pseudo-random uint.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">amount</span>:uint</code> &mdash;  The returned uint will always be 0 <= uint < amount.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>uint</code> &mdash; The uint.
+   </td>
+</tr>
+</table>
+</div>
+<a name="randomizeSeed()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">randomizeSeed</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function randomizeSeed():void</code><p>
+   Randomizes the random seed using Flash's Math.random() function.
+   </p></div>
+<a name="removeNulls()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeNulls</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function removeNulls(a:Array):Array</code><p>
+   Removes all nulls from the array.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">a</span>:Array</code> &mdash;  The array to clean.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Array</code> &mdash; The provided array with nulls removed.
+   </td>
+</tr>
+</table>
+</div>
+<a name="scale()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scale</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function scale(value:Number, min:Number, max:Number, min2:Number, max2:Number):Number</code><p>
+   Transfers a value from one scale to another scale. For example, scale(.5, 0, 1, 10, 20) == 15, and scale(3, 0, 5, 100, 0) == 40.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">value</span>:Number</code> &mdash;  The value on the first scale.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">min</span>:Number</code> &mdash;   The minimum range of the first scale.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">max</span>:Number</code> &mdash;   The maximum range of the first scale.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">min2</span>:Number</code> &mdash;  The minimum range of the second scale.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">max2</span>:Number</code> &mdash;  The maximum range of the second scale.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Number</code> &mdash; The scaled value.
+   </td>
+</tr>
+</table>
+</div>
+<a name="scaleClamp()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scaleClamp</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function scaleClamp(value:Number, min:Number, max:Number, min2:Number, max2:Number):Number</code><p>
+   Transfers a value from one scale to another scale, but clamps the return value within the second scale.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">value</span>:Number</code> &mdash;  The value on the first scale.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">min</span>:Number</code> &mdash;   The minimum range of the first scale.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">max</span>:Number</code> &mdash;   The maximum range of the first scale.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">min2</span>:Number</code> &mdash;  The minimum range of the second scale.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">max2</span>:Number</code> &mdash;  The maximum range of the second scale.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Number</code> &mdash; The scaled and clamped value.
+   </td>
+</tr>
+</table>
+</div>
+<a name="sign()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">sign</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function sign(value:Number):int</code><p>
+   Finds the sign of the provided value.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">value</span>:Number</code> &mdash;  The Number to evaluate.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>int</code> &mdash; 1 if value > 0, -1 if value < 0, and 0 when value == 0.
+   </td>
+</tr>
+</table>
+</div>
+<a name="switchWorld()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">switchWorld</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function switchWorld(to:<a href="World.html">World</a>, inheritAll:Boolean = false):void</code><p>
+   Switches the current World at the end of the frame. Call this only if
+   you want to use Entity persistence, otherwise just assign FP.world.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">to</span>:<a href="World.html">World</a></code> &mdash;    The World to switch to.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">inheritAll</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;  If all Entities (not just persistent ones) should be inherited.
+   </td>
+</tr>
+</table>
+</div>
+<a name="constantDetail"></a>
+<div class="detailSectionHeader">Constant detail</div>
+<a name="VERSION"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">VERSION</td><td class="detailHeaderType">constant</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const VERSION:String = "1.00"</code><p>
+   The FlashPunk version.
+   </p></div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->
